@@ -10,7 +10,7 @@ origkey = g
 
 topLine = \relative c' {
   \clef "treble" \time 6/8 \key \origkey \major \partial 8
-  d8 | g4 g8 a4 b8 | d4 b8 a4 c8 | b4 g8 g4 b8 | a4  fs8 d4 \break
+  d8 | g4 g8 a4 b8 | d4 b8 a4 c8 | b4 g8 g4 b8 | a4  fs8 d4 \bar "||" \break
   d8_"Intro" | g4 g8 a4 b8 | d4 b8 a4 c8  |b4 g8 g8 [ a8 b8 ]  | a4. g4 \bar "|."
 }
 

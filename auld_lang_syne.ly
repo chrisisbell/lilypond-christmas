@@ -19,7 +19,7 @@ topLine = \relative c' {
   g8 a4 e'4 d4. ( b8 )
   b4 d4 e2. g4 d4.
   b8 b4 g4 a4. g8
-  a4 b8 a8 g4. e8 e4
+  a4 b8_"Intro" a8 g4. e8 e4
   d4 g2. \bar "|."
 }
 
@@ -30,8 +30,8 @@ Chords =
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
-    r4 | g1 |a2:m d | e:m g | c1 | g1 | a2:m d |
-    e2:m c | g1 | g2 e:m | a:m d | g e:m | c1 |
+    r4 | g1 |a2:m d | g1 | c1 | g1 | a2:m d |
+    e2:m c | g1 | g | a2:m d | g e:m | c1 |
     g1 | a2:m d | e:m c | g2.
   }
 }

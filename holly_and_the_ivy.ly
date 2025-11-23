@@ -13,7 +13,7 @@ topLine = \relative c'' {
   b4. ) g8 g8 [ g8 ] g4
   e'4 d2 d8 ( [ c8 ) ]
   b8 [ a8 ] g4 b8 [ b8 ]
-  e,8 [ e8 ] d4 g8 [ a8 ] b8
+  e,8 [ e8 ] d4 \break g8 [ a8 ] b8
   [ c8 ] b4 a4 g2 g8 [
   g8 ] g8 [ g8 ] g4 e'4
   d4 b4 g8 [ g8 ] g8 [
