@@ -21,7 +21,7 @@ Chords =
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
-    r8 | g2. | d4. d | g2. | d |
+    r8 | g2. | g4. d | g2. | d |
     g | g4. d | e2.:m | d4.:7 g4
   }
 }

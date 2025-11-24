@@ -57,7 +57,7 @@ Chords =
   \chordmode {
     d1 | g2 a | g1 | e2:m a |
     d1 | g2 a | b:m e:m | a d | d1 |
-    d1 | g2 g | e1:m | g2 a |
+    d1 | g2 d | e1:m | g2 a |
     d2 a | g d | e1:m | a2 d |
     \set chordChanges = ##f
     d1 |

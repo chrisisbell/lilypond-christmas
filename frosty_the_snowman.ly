@@ -14,7 +14,7 @@ topLine = \relative c'' {
   g2 e4. ( f8 ) | g4 c2 b8 ( c ) | d4 c b a8 g ~ | g2. b8 (c ) | d4 c b a8 a |
   g8 c4 e,8 ~ e4 g8 ( a ) | g4 f e d | c2. \breathe c4 |
   a' a c c | b a g e | f a g f | e2. \breathe e4 |
-  d4 d g g | b b d d8 ( c ) | d4 c b a | g2 \breathe g |
+  d4 d g g | b b d d8 ( b ) | d4 c b a | g2 \breathe g |
   g2 e4. ( f8 ) | g4 c2 b8 ( c ) | d4 c b a8 g ~ | g2. \breathe b8_"Intro" ( c ) |
   d4 c b a8 a | g8 c4 e,8 ~ e4 g8 ( a ) | g4 f e d | c2. r4 |
   \bar "|."

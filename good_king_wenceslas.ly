@@ -31,7 +31,7 @@ Chords =
   \set noChordSymbol = ""
   \chordmode {
     g1 | g2 d:7 | c1 |g | \break
-    g1 | g | c | g | d | g2 d |g1 | c | g |
+    g1 | g | c | g | g | g2 d |g1 | c | g |
   }
 }
 

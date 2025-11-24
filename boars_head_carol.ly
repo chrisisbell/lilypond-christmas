@@ -10,9 +10,9 @@ origkey = d
 topLine = \relative c'' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 4
   a4 | d ~ d d4. d8 | cs4 d a4. fs8 | g4 g b g | a4. a8 d4 a8 a |
-  d4 d d d | cs d a4. fs8 | g4 g b g | a4. a8 d2 \fermata | \bar "||" \break
+  d4 d d d | cs d a4. fs8 | g4 g b g | a4. a8 d2 | \bar "||" \break
   d4. ^"Chorus"_"Intro" d8 cs4 cs | d d a2 |
-  g4 g b g | a4. a8 d4 \fermata \bar "|."
+  g4 g b g | a4. a8 d4 \bar "|."
 }
 
 
