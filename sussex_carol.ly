@@ -14,7 +14,7 @@ topLine = \relative c'' {
   }
   a4. a4 g8 | a b c d c b | a2. |
   \time 9/8 d4._"Intro" e d |
-  \time 6/8 c4 b8 a g a | g4.
+  \time 6/8 c4 b8 a g a | g4. r4
   \bar "|."
 
 }
