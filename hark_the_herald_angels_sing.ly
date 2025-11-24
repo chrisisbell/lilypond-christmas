@@ -40,7 +40,7 @@ topLine = \relative c' {
   g8 ) ] g4 ( fs4 ) e4
   e4 a4 g8 ( [ f8 ) ]
   e4. d8 c2 d4 d4
-  g4 fs8 ( [ e8 ) ] d4.
+  g4 fs?8 ( [ e8 ) ] d4.
   c8 b2 e4. e8 f4
   f4 e8 ( [ f8 ) e8 (
   d8 ) ] c8 ( [ b8 ] a4 )
