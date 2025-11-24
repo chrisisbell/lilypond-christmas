@@ -40,7 +40,7 @@ Chords =
   \chordmode {
     a1 | a | a2 fs:m7 |
     d2 a | a1  |fs2:m7 a2 |
-    a1 | b2:m7 a | a2 fs |
+    a1 | a1 | a2 fs |
     b:m e | a d |e1 |
     a1 |a2 e |a fs | b:m e |
     a2 d | e1 | a | a2 e | a1 |

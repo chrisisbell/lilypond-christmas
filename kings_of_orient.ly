@@ -36,9 +36,9 @@ Chords =
   \set noChordSymbol = ""
   \chordmode {
     e4.:m | e:m | b:7 | e:m | e:m | e:m | b:7 | e:m |
-    e4.:m | d | g | g | b:7 | e:m | e:m |
+    e4.:m | d | g | g | d | e4:m b8:7 | e4.:m |
     d4.:7 | g | g | c | g | g | g | c | g |
-    g4. | d | c | d | g | g  |c | e:m |
+    g4. | d | c | d | g | g  |c | g |
   }
 }
 
