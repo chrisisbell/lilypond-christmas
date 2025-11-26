@@ -4,8 +4,6 @@
 carolTitle = "Once in Royal David's City"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 2
@@ -19,10 +17,7 @@ topLine = \relative c' {
   ( [ a8 ) g8 ( fs8 ) ] g2 \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -32,6 +27,5 @@ Chords =
     c2 | g d | g c | g d | g
   }
 }
-
 
 \include "include/postamble.ly"

@@ -21,18 +21,13 @@ topLine = \relative c''' {
   g8 ) g1 \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
     g1 | e:m | a:m7 | d | g | e:m | a2:m7 d:7 | g1 |
     c1 | e:m | g | d | g | e:m | a2:m7 d | g1 |
   }
-
 }
-
 
 \include "include/postamble.ly"

@@ -4,8 +4,6 @@
 carolTitle = "Santa Claus is Comin' to Town"
 
 origkey = c
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 2/2 \key \origkey \major \partial 4
@@ -29,14 +27,10 @@ topLine = \relative c'' {
   e d cs d | b b b b8 c? | d4 c b a | g r4 g4. g8 |
   e8 f g4 g4. g8 | a b? c4 c2 | e,8 f g4 g g | a8 g f4 f2 |
   e4_"Intro" g c, e | d f2 d'4 | c1 ~ | c4 r4 r4
-
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -45,8 +39,6 @@ Chords =
     c2 c:7 | f2. f4:m | c2 c:7 | f2. f4:m |
     c2 a:m | d:m g:7 | c1 |
   }
-
 }
-
 
 \include "include/postamble.ly"

@@ -4,8 +4,6 @@
 carolTitle = "Frosty the Snowman"
 
 origkey = c
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 2/2 \key \origkey \major
@@ -20,10 +18,7 @@ topLine = \relative c'' {
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -32,8 +27,6 @@ Chords =
     f1 | c | d2:m7 g:7 | c1 | g | g1 | a2:m7 d2:7 | g g:aug | c1
     c1 | f1 | c1 | f | c2 a4:m a:7 | d2:m7 g:7 | c2.
   }
-
 }
-
 
 \include "include/postamble.ly"

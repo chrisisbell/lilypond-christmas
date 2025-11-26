@@ -4,8 +4,6 @@
 carolTitle = "The First Noel"
 
 origkey = d
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \time 3/4 \key \origkey \major \partial 4
@@ -33,10 +31,7 @@ topLine = \relative c' {
   fs2 \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -45,6 +40,5 @@ Chords =
     d2 d4 | d2. | a2. | g | d | b:m7 | d | d4 a2:7 | d2
   }
 }
-
 
 \include "include/postamble.ly"

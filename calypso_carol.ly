@@ -4,8 +4,6 @@
 carolTitle = "Calypso Carol"
 
 origkey = c
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 4/4 \key \origkey \major
@@ -15,17 +13,14 @@ topLine = \relative c'' {
   g4_"Intro" g8 a ~ a g f e | d4 f8 a ~ a4. c,8 | b4 d8 g ~ g f e d | c1 | \bar "|."
 }
 
-
 Chords =
 \new ChordNames {
-  \time 4/4 \key \origkey \major
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
     c1 | d:m | g:7 | c | c | d:m | g:7 | c |
     f1 | c | g:7 | c | c | d:m | g:7 | c |
   }
-
 }
 
 \include "include/postamble.ly"

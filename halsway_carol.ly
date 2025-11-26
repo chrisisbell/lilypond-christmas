@@ -4,8 +4,6 @@
 carolTitle = "Halsway Carol"
 
 origkey = d
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 4/4 \key \origkey \major
@@ -45,13 +43,10 @@ topLine = \relative c'' {
       {fs,4  e4  d2 }
     }
   } \bar "|."
-
 }
 
 
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -62,8 +57,6 @@ Chords =
     \set chordChanges = ##f
     d1 |
   }
-
 }
-
 
 \include "include/postamble.ly"

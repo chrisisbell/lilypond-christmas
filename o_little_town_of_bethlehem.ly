@@ -4,8 +4,6 @@
 carolTitle = "O Little Town of Bethlehem"
 
 origkey = f
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 4
@@ -29,10 +27,7 @@ topLine = \relative c' {
   f2. \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -41,8 +36,6 @@ Chords =
     r4 | a2:m c | f c | f g:m | c2.
     r4 | f2. c4 | f1 | g2:m c:7 | f2.
   }
-
 }
-
 
 \include "include/postamble.ly"

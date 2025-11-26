@@ -4,8 +4,6 @@
 carolTitle = "It Came Upon the Midnight Clear"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c''' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 4
@@ -26,10 +24,7 @@ topLine = \relative c''' {
   b4 a4 g2. \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -38,8 +33,6 @@ Chords =
     b1:7 | e:m | d | d |
     b2:m7 e:7 | a1:m | g2. d4:7 | g2.
   }
-
 }
-
 
 \include "include/postamble.ly"

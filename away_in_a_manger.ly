@@ -4,9 +4,6 @@
 carolTitle = "Away in a Manger"
 
 origkey = f
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
-%#(define-once transposeto (ly:make-pitch -1 3))	% key of F (2nd number is musical interval minus one)
 
 topLine = \relative c' {
   \clef "treble" \time 3/4 \key \origkey \major \partial 4
@@ -30,10 +27,8 @@ topLine = \relative c' {
   f2 \bar "|."
 }
 
-
 Chords =
 \new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {

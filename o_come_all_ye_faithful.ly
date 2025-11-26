@@ -4,8 +4,6 @@
 carolTitle = "O Come, All Ye Faithful"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 4
@@ -41,10 +39,7 @@ topLine = \relative c'' {
   d4 ( g2 ) fs4 g2. \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -52,8 +47,6 @@ Chords =
     g1 | c2 g | d e:m |d1 |
     g1 | g | g | g2 d |d1:7 | d2:7 c | g d:7 | g2.
   }
-
 }
-
 
 \include "include/postamble.ly"

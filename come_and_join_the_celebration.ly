@@ -4,8 +4,6 @@
 carolTitle = "Come and Join the Celebration"
 
 origkey = c
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 4/4 \key \origkey \major
@@ -35,10 +33,7 @@ topLine = \relative c' {
   }
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -47,8 +42,6 @@ Chords =
     g1:7 | c | f | c |
     g1:7 | c | f | g:7 |
   }
-
 }
-
 
 \include "include/postamble.ly"

@@ -4,8 +4,6 @@
 carolTitle = "Auld Lang Syne"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 4
@@ -23,10 +21,7 @@ topLine = \relative c' {
   d4 g2. \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {

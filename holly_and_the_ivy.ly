@@ -4,8 +4,6 @@
 carolTitle = "The Holly and the Ivy"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 3/4 \key \origkey \major \partial 4
@@ -24,10 +22,7 @@ topLine = \relative c'' {
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -35,6 +30,5 @@ Chords =
     g2 c4 | g2. g2 e4:m | d2. | g | c4 g2 |g4 d2 |g2
   }
 }
-
 
 \include "include/postamble.ly"
