@@ -4,8 +4,6 @@
 carolTitle = "Jingle Bells"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 4/4 \key \origkey \major
@@ -33,10 +31,7 @@ topLine = \relative c' {
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -46,6 +41,5 @@ Chords =
     g1 | g | c2 g | d:7 g|
   }
 }
-
 
 \include "include/postamble.ly"

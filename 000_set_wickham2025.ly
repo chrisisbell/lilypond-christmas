@@ -45,6 +45,7 @@
 \include "noel_nouvelet.ly"
 \include "it_came_upon_a_midnight_clear.ly"
 \include "in_the_bleak_mid_winter.ly"
+\include "joy_to_the_world.ly"
 \include "boars_head_carol.ly"
 \include "a_merry_christmas.ly"
 \include "ding_dong_merrily_on_high.ly"

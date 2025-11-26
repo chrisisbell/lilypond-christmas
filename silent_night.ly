@@ -4,8 +4,6 @@
 carolTitle = "Silent Night"
 
 origkey = c
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 6/8 \key \origkey \major
@@ -22,10 +20,7 @@ topLine = \relative c'' {
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -33,6 +28,5 @@ Chords =
     f2. |c | g:7 | c | c4. g:7 | c2. |
   }
 }
-
 
 \include "include/postamble.ly"

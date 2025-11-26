@@ -55,6 +55,7 @@
 \include "in_the_bleak_mid_winter.ly"
 \include "it_came_upon_a_midnight_clear.ly"
 \include"jingle_bells.ly"
+\include "joy_to_the_world.ly"
 \include "londonderry_air_(danny_boy).ly"
 \include "noel_nouvelet.ly"
 \include "o_christmas_tree.ly"

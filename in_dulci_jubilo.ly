@@ -4,9 +4,6 @@
 carolTitle = "In Dulci Jubilo"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
-%#(define-once transposeto (ly:make-pitch -1 3))	% key of F (2nd number is musical interval minus one)
 
 topLine = \relative c'' {
   \clef "treble"     \time 3/2 \key \origkey \major \partial 2
@@ -19,10 +16,7 @@ topLine = \relative c'' {
   fs2 g1. ( d'1. ) b1 b2 a1 a2 g1 \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -32,6 +26,5 @@ Chords =
     c1. | d | e:m | d | g | d:7 | g1
   }
 }
-
 
 \include "include/postamble.ly"

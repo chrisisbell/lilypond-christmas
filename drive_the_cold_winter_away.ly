@@ -3,12 +3,10 @@
 
 carolTitle = "Drive the Cold Winter Away"
 
-origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
+origkey = e
 
 topLine = \relative c' {
-  \numericTimeSignature\time 6/4 \key \origkey \major \partial 4
+  \numericTimeSignature\time 6/4 \key \origkey \minor \partial 4
   \repeat volta 2 {
     e4 | g4. fs8 e4 b'2 e4 | d4. c8 b4 g'2 g,4 | a2 b4 c4. d8 c4 | b2. ~ b4 r4
   }
@@ -17,10 +15,7 @@ topLine = \relative c' {
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 6/4 \key \origkey \minor \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -28,8 +23,6 @@ Chords =
     r4 | g2. b:m7 | a:m7 d | g b | e2.:m r2
     r4 | g2. b:m7 | a:m7 d | g b | e:m
   }
-
 }
-
 
 \include "include/postamble.ly"

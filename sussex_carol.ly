@@ -4,8 +4,6 @@
 carolTitle = "Sussex Carol"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 6/8 \key \origkey \major \partial 8
@@ -16,13 +14,9 @@ topLine = \relative c'' {
   \time 9/8 d4._"Intro" e d |
   \time 6/8 c4 b8 a g a | g4. r4
   \bar "|."
-
 }
 
-
-Chords =
-\new ChordNames {
-  \time 6/8
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -31,8 +25,6 @@ Chords =
     g4. c g |
     a4.:m d | g
   }
-
 }
-
 
 \include "include/postamble.ly"

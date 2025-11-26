@@ -4,9 +4,6 @@
 carolTitle = "(We Three) Kings of Orient"
 
 origkey = e
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
-%#(define-once transposeto (ly:make-pitch -1 3))	% key of F (2nd number is musical interval minus one)
 
 topLine = \relative c' {
   \clef "treble" \time 3/8 \key \origkey \minor
@@ -28,10 +25,7 @@ topLine = \relative c' {
   g4. \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -41,6 +35,5 @@ Chords =
     g4. | d | c | d | g | g  |c | g |
   }
 }
-
 
 \include "include/postamble.ly"

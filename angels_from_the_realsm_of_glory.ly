@@ -3,23 +3,7 @@
 
 carolTitle = "Angels from the Realms of Glory"
 
-\header {
-  % Remove default LilyPond tagline
-  tagline = ##f
-}
-
-\paper {
-  #(set-paper-size "a4")
-  left-margin = 20 \mm
-  right-margin = 20 \mm
-  top-margin = 15 \mm
-  bottom-margin = 10 \mm
-  indent = 0
-}
-
 origkey = a
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 4/4 \key \origkey \major

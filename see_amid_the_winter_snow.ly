@@ -4,8 +4,6 @@
 carolTitle = "See Amid the Winter Snow"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 4/4 \key \origkey \major
@@ -23,10 +21,7 @@ topLine = \relative c'' {
   a4 g2 \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -35,6 +30,5 @@ Chords =
     g1 | d | g | a2:m d | g1 | a2:7 d | g1 | d2:7 g |
   }
 }
-
 
 \include "include/postamble.ly"

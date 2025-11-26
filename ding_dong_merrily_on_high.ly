@@ -4,8 +4,6 @@
 carolTitle = "Ding Dong! Merrily on High"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 2/2 \key \origkey \major
@@ -26,13 +24,9 @@ topLine = \relative c'' {
     d4_"Intro" e4 g4 g4 fs4
     g2 g2
   }
-
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -41,7 +35,6 @@ Chords =
     }
     g2 e:m | c d | g e:m | a:m d | c a:m | d1 | c2 d | g1 |
   }
-
 }
 
 \include "include/postamble.ly"

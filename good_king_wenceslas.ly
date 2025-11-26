@@ -4,10 +4,6 @@
 carolTitle = "Good King Wenceslas"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
-
-
 
 topLine = \relative c'' {
   \numericTimeSignature\time 2/2 \key \origkey \major
@@ -23,10 +19,7 @@ topLine = \relative c'' {
   b4 a4 g2 ( c2 ) g1 \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -34,6 +27,5 @@ Chords =
     g1 | g | c | g | g | g2 d |g1 | c | g |
   }
 }
-
 
 \include "include/postamble.ly"

@@ -4,8 +4,6 @@
 carolTitle = "The Boar's Head Carol"
 
 origkey = d
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 4
@@ -15,10 +13,8 @@ topLine = \relative c'' {
   g4 g b g | a4. a8 d4 \bar "|."
 }
 
-
 Chords =
 \new ChordNames {
-  \time 4/4 \key \origkey \major \partial 4
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -26,8 +22,6 @@ Chords =
     d1 | a4 g d2 | g1 | a2:7 d |
     d2 a | d1 | g1 | a2:7 d4
   }
-
 }
-
 
 \include "include/postamble.ly"

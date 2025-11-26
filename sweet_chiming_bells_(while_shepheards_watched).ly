@@ -4,8 +4,6 @@
 carolTitle = "Sweet Chiming Christmas Bells (While Shepherds Watched)"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 4
@@ -22,10 +20,7 @@ topLine = \relative c'' {
   |   g2.  \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -33,8 +28,6 @@ Chords =
     d:7 g | g | c2 g | d1 |g | c2 g | d1 |
     g2 c | g c | g d | g1 | g2 c | g a:m | g2 d:7 | g2.
   }
-
 }
-
 
 \include "include/postamble.ly"

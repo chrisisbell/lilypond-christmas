@@ -4,10 +4,6 @@
 carolTitle = "God Rest You Merry, Gentlemens"
 
 origkey = e
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
-
-
 
 topLine = \relative c' {
   \numericTimeSignature\time 4/4 \key \origkey \minor \partial 4
@@ -29,10 +25,7 @@ topLine = \relative c' {
   fs4 e2. \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -40,9 +33,7 @@ Chords =
     r4 |e1:m | e:m e:m |b2.:7
     r4 | a1:m | g | e:m | d | e2:m c | g1 |
     e2:m a:7 | d1 | g | e2.:m b4:7 | e2.:m
-
   }
 }
-
 
 \include "include/postamble.ly"

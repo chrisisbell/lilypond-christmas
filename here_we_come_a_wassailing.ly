@@ -4,8 +4,6 @@
 carolTitle = "Here We Come a-Wassailing"
 
 origkey = ef
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 6/8 \key \origkey \major
@@ -18,10 +16,7 @@ topLine = \relative c' {
   \time 6/8 ef2.| \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 6/8
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -32,6 +27,5 @@ Chords =
   }
 
 }
-
 
 \include "include/postamble.ly"

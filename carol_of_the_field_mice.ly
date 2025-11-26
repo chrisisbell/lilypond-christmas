@@ -4,8 +4,6 @@
 carolTitle = "Carol of the Field Mice"
 
 origkey = ef
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 2/4 \key \origkey \major
@@ -18,10 +16,8 @@ topLine = \relative c' {
   bf4. bf8 | c4 af | bf bf | bf af | bf g | f bf | bf bf | ef4. ef8 | d4 bf |
   c2 ( | af ) | bf | g | f ~ | f | \break
   ef4_"Intro" f8 g af4. af8 | bf4 af8 g | f2 | ef'4 d8 c | bf4 af8 g | f2 | ef2 |
-
   \bar "|."
 }
-
 
 Chords =
 \new ChordNames {

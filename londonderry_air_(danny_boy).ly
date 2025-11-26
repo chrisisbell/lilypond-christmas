@@ -4,8 +4,6 @@
 carolTitle = "Londonderry Air (Danny Boy)"
 
 origkey = c
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 4/4 \key \origkey \major \partial 4.
@@ -25,9 +23,7 @@ topLine = \relative c' {
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -37,6 +33,5 @@ Chords =
     c2 f | c4 a:m7 f g:7 | c2 g:7 | c2 r8
   }
 }
-
 
 \include "include/postamble.ly"

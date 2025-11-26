@@ -4,8 +4,6 @@
 carolTitle = "Gaudete"
 
 origkey = a
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 4/2 \key \origkey \minor
@@ -18,16 +16,12 @@ topLine = \relative c'' {
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
     a1:m e:m | c2. g | e1:m | e1:m g | e2.:m g | e2:m a:m |
   }
-
 }
-
 
 \include "include/postamble.ly"

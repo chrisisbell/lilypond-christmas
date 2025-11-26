@@ -4,8 +4,6 @@
 carolTitle = "Rudolph, The Red Nosed Reindeer"
 
 origkey = c
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 2/2 \key \origkey \major
@@ -35,13 +33,9 @@ topLine = \relative c'' {
   a4 g2. | % 25
   g8. a16 g8. a16 g4 d'4 | % 26
   c1 \bar "|."
-
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -51,8 +45,6 @@ Chords =
     d1:7 | g:7 | c | c | c2 c:dim | g1 |
     g1 | g | g | c |
   }
-
 }
-
 
 \include "include/postamble.ly"

@@ -4,9 +4,6 @@
 carolTitle = "While Shepherds Watched their Flocks"
 
 origkey = e
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
-%#(define-once transposeto (ly:make-pitch -1 3))	% key of F (2nd number is musical interval minus one)
 
 topLine = \relative c'' {
   \clef "treble" \numericTimeSignature\time 4/2 \key g \major \partial 2
@@ -17,10 +14,7 @@ topLine = \relative c'' {
   \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -28,6 +22,5 @@ Chords =
     c1 c | d d2 g |a1:m d | g1.
   }
 }
-
 
 \include "include/postamble.ly"

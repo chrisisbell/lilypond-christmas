@@ -4,8 +4,6 @@
 carolTitle = "Gloucestershire Wassail"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 3/4 \key \origkey \major \partial 4
@@ -23,10 +21,7 @@ topLine = \relative c' {
   g2. ~g4 r4 \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -35,8 +30,6 @@ Chords =
     g2. | d | g | d |
     g | c | d | g | g4
   }
-
 }
-
 
 \include "include/postamble.ly"

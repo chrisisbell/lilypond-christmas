@@ -4,8 +4,6 @@
 carolTitle = "Hark! the Herald-Angels Sing"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 4/4 \key \origkey \major
@@ -50,10 +48,7 @@ topLine = \relative c' {
   "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 4/4 \key \origkey \major
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -63,6 +58,5 @@ Chords =
     c1 | c4 e:7 a2:m | d g | g4 d:7 g2 |
   }
 }
-
 
 \include "include/postamble.ly"

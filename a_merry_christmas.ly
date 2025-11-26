@@ -4,8 +4,6 @@
 carolTitle = "(We wish You) A Merry Christmas"
 
 origkey = g
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 3/4 \key \origkey \major \partial 4
@@ -22,17 +20,13 @@ topLine = \relative c' {
   a4 fs4 g2. ~ g2 \bar "|."
 }
 
-
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
     r4 | g2. | c | a:m | d | e:m | e:m e4:m d2 | g2. |
     g2. | d | e:m | d | g | d | a4:m d2:7 | g2
   }
-
 }
 
 \include "include/postamble.ly"

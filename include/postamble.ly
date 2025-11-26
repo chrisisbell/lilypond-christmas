@@ -15,11 +15,12 @@
 }
 
 topLinePart = \new Staff \with {
-  %instrumentName = "S1(C)"
-  %shortInstrumentName = "1"
   midiInstrument = "recorder"
 } \topLine
 
+
+#(define-once transposeto origkey)
+#(or transposeto (set! transposeto origkey))
 
 \tocItem \markup \carolTitle
 \score {
@@ -34,6 +35,7 @@ topLinePart = \new Staff \with {
   \layout { }
   \header {
     piece = \carolTitle
+    tagline = ##f
   }
 }
 

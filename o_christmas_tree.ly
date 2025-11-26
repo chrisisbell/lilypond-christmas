@@ -4,8 +4,6 @@
 carolTitle = "O Christmas Tree"
 
 origkey = d
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c' {
   \numericTimeSignature\time 3/4 \key \origkey \major \partial 4
@@ -17,9 +15,7 @@ topLine = \relative c' {
 }
 
 
-Chords =
-\new ChordNames {
-  \time 3/4 \key \origkey \major \partial 4
+Chords = \new ChordNames {
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -27,8 +23,6 @@ Chords =
     r4 d2. | a:7 | a:7 | d |
     d2 a4:7 | d2. | g2 a4:7 | d2
   }
-
 }
-
 
 \include "include/postamble.ly"

@@ -4,8 +4,6 @@
 carolTitle = "Deck the Hall"
 
 origkey = f
-#(define-once transposeto origkey)
-#(or transposeto (set! transposeto origkey))
 
 topLine = \relative c'' {
   \numericTimeSignature\time 2/2 \key \origkey \major
@@ -21,10 +19,8 @@ topLine = \relative c'' {
   a4 g4 f2 \bar "|."
 }
 
-
 Chords =
 \new ChordNames {
-  \time 2/2 \key \origkey \major
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \chordmode {
@@ -34,6 +30,5 @@ Chords =
   }
 
 }
-
 
 \include "include/postamble.ly"
