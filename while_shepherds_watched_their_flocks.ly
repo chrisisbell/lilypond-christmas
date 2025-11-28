@@ -3,10 +3,10 @@
 
 carolTitle = "While Shepherds Watched their Flocks"
 
-origkey = e
+origkey = g
 
 topLine = \relative c'' {
-  \clef "treble" \numericTimeSignature\time 4/2 \key g \major \partial 2
+  \clef "treble" \numericTimeSignature\time 4/2 \key \origkey \major \partial 2
   g2 | b2. b4 a2 g2 | c2 c2 b2  a2 | b2 d2 d2 cs2 d1. \bar "||"
   b2_"Intro" | e2. d4 c2
   b2 a2 g2 fs2
