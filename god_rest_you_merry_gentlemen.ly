@@ -1,7 +1,7 @@
 \version "2.24.3"
 \language "english"
 
-carolTitle = "God Rest You Merry, Gentlemens"
+carolTitle = "God Rest You Merry, Gentlemen"
 
 origkey = e
 
