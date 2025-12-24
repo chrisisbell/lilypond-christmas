@@ -35,7 +35,6 @@
 \include "away_in_a_manger.ly"
 \include "boars_head_carol.ly"
 \include "calypso_carol.ly"
-\include "carol_of_the_field_mice.ly"
 \include "come_and_join_the_celebration.ly"
 \include "deck_the_hall.ly"
 \include "ding_dong_merrily_on_high.ly"

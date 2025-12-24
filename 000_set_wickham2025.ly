@@ -64,7 +64,6 @@ transposeto = g
 transposeto = d
 \include "here_we_come_a_wassailing.ly"
 transposeto = g
-\include "carol_of_the_field_mice.ly"
 \include "o_come_all_ye_faithful.ly"
 transposeto = g
 \include "londonderry_air_(danny_boy).ly"
