@@ -29,6 +29,12 @@ topLine = \relative c' {
   a4 ( b4 ) cs4 | % 25
   d4 ( a4 ) g4 | % 26
   fs2 \bar "|."
+  \break
+
+  a8 ( [ ^"(Descant Refrain)" g8 ) ] |
+  fs2 d'4 | cs2 fs8 ( e ) |d2 g4 | fs2. |
+  fs4. fs8 g4 | a8 ( g  fs4 ) e |
+  d8 ( cs b d ) cs ( e ) | d2 \bar "|."
 }
 
 Chords = \new ChordNames {
