@@ -49,6 +49,7 @@
 \include "hark_the_herald_angels_sing.ly"
 \include "here_we_come_a_wassailing.ly"
 \include "holly_and_the_ivy.ly"
+\include "holly_and_the_ivy_cornish_tune.ly"
 \include "i_saw_three_ships.ly"
 \include "in_dulci_jubilo.ly"
 \include "in_the_bleak_mid_winter.ly"
